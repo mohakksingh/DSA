@@ -1,5 +1,6 @@
 package Arrays.Striver;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,5 +35,25 @@ public class Sum21 {
             mpp.put(a,i);
         }
         return new int[] {-1,-1};
+    }
+
+    public static String read2(int n, int []book, int target){
+        // Write your code here.
+        int left=0;
+        int right=0;
+        Arrays.sort(book);
+        while(left<right){
+            int sum=book[   left]+book[right];
+            if(sum==target){
+                return "YES";
+            }
+            else if(sum<target){
+                left++;
+            }
+            else{
+                right++;
+            }
+        }
+        return "NO";
     }
 }
