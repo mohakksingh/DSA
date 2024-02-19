@@ -2,6 +2,7 @@ package Arrays.Kunal;
 
 import java.util.*;
 
+
 public class ArrayListExample {
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
