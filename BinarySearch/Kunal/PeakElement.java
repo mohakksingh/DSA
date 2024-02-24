@@ -1,11 +1,11 @@
 package BinarySearch.Kunal;
 
-public class PeakElementInMountain {
+public class PeakElement {
     public static void main(String[] args) {
-        int arr[]={0,10,5,2};
-        System.out.println(peakIndexInMountainArray(arr));
+        
     }
-    static public int peakIndexInMountainArray(int[] arr) {
+
+    static public int peakIndexinArray(int[] arr) {
         int start=0;
         int end=arr.length-1;
         
@@ -21,4 +21,5 @@ public class PeakElementInMountain {
         }
         return start;
     }
+
 }
