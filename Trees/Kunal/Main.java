@@ -4,12 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        AVL tree=new AVL();
+        int[] arr={3,8,6,7,-2,-8,4,9};
+        SegmentTree tree=new SegmentTree(arr);
+        // tree.display();
 
-        for(int i=0;i<1000;i++){
-            tree.insert(i);
-        }
-
-        System.out.println(tree.height());
+        System.out.println(tree.query(0, 4));
     }
 }
