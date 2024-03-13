@@ -28,7 +28,7 @@ public class roll {
         System.out.println(random.name);
         
         // Student one=new Student();
-        // Student two=one; f
+        // Student two=one;
 
     }
     
@@ -64,4 +64,18 @@ class Student{
         this.marks=marks;
     }
 
+}
+
+class A{
+    final int num=10;
+    String name;
+
+    public A(String name){
+        this.name=name;
+    }
+
+    @Override
+    protected void finalize() throws Throwable{
+        System.out.println("Object is destroyed");
+    }
 }
