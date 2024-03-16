@@ -9,6 +9,7 @@ public class Human {
 
     static void message(){
         System.out.println("Hello world");
+        System.out.println("Population: "+population);
     }
     public Human(int age, String name, int salary, boolean married) {
         this.age = age;
