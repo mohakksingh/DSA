@@ -27,13 +27,16 @@ public class Main {
         // list.insert(99, 10);
         // list.display();
 
-        CircularLL list=new CircularLL();
-        list.insert(23);
-        list.insert(3);
-        list.insert(19);
-        list.insert(75);
-        list.delete(19);
+        LL list=new LL();
+        list.insertFirst(23);
+        list.insertFirst(3);
+        list.insertFirst(19);
+        list.insertFirst(56);
+        list.insertFirst(659);
+        list.insertFirst(45);
+        // list.delete(19);
         list.display();
+        list.insertRec(75, 3);
         
     }
 }
