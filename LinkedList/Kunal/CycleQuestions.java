@@ -165,6 +165,7 @@ public class CycleQuestions {
         return prev;    
     }
 
+    //https://leetcode.com/problems/palindrome-linked-list/
     public boolean isPalindrome(ListNode head) {
         ListNode mid=middleNode(head);
         ListNode headSecond=reverseList(mid);
@@ -180,6 +181,31 @@ public class CycleQuestions {
         reverseList(headSecond);
 
         return head==null || headSecond==null;
+    }
+
+    //https://leetcode.com/problems/reorder-list/
+    public void reorderList(ListNode head) {
+        if(head==null || head.next ==null){
+            return;
+        }
+        
+        ListNode mid=middleNode(head);
+        ListNode hf=head;
+        ListNode hs=reverseList(mid);
+        
+        while(hf!=null && hs!=null){
+            ListNode temp=hf.next;
+            hf.next=hs;
+            hf=temp;
+            
+            temp=hs.next;
+            hs.next=hf;
+            hs=temp;
+        }
+        
+        if(hf!=null){
+            hf.next=null;
+        }   
     }
 }
 
