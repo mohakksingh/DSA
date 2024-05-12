@@ -1,4 +1,5 @@
-package Arrays.Striver;
+pack
+age Arrays.Striver;
 
 public class SecondLargest {
     public static void main(String[] args) {
